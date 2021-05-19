@@ -37,7 +37,6 @@ public class Block {
         this.data = data;
         this.pos = pos;
     }
-    @Override
     public String toString()
     {
          return new StringBuilder("Hash: ").append(this.getHash()).append(" Data: ").append(this.data).toString();
