@@ -3,8 +3,12 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
-        Tools x;
-        System.out.println(Tools.getSHA2HexValue("ashishcccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"));
+        BlockChain blockChain = new BlockChain("genesis");
+        blockChain.addBlock("block1");
+        blockChain.addBlock("block2");
+        blockChain.addBlock("block3");
+        blockChain.addBlock("block4");
+        blockChain.addBlock("block5");
+        blockChain.traverse();
     }
 }
